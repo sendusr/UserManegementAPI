@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h0VREhwKc7RHNtBZdXfXZZNty2B2c9+Z/OxOC5oiYaBwpvBoqRAvuXH6+QgwrCr4xObUgioy1WqCkazntEvUpg==",
+  "dgSpecHash": "XL0a4DWzCp5WkFFdgt/awbORPfF8mpLvV5ffVBq7dwZRTKcdwHEyVdWfNhQU6yAsTEvmfohy9+Z57HcBVQ3QPA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sendus-pc\\source\\repos\\UserManagement\\UserManagement.csproj",
+  "projectFilePath": "C:\\Users\\sendus-pc\\source\\repos\\UserManagementAPI\\UserManegementAPI\\UserManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sendus-pc\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\sendus-pc\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",

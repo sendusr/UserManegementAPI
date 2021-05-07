@@ -7590,11 +7590,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sendus-pc\\source\\repos\\UserManagement\\UserManagement.csproj",
+      "projectUniqueName": "C:\\Users\\sendus-pc\\source\\repos\\UserManagementAPI\\UserManegementAPI\\UserManagement.csproj",
       "projectName": "UserManagement",
-      "projectPath": "C:\\Users\\sendus-pc\\source\\repos\\UserManagement\\UserManagement.csproj",
+      "projectPath": "C:\\Users\\sendus-pc\\source\\repos\\UserManagementAPI\\UserManegementAPI\\UserManagement.csproj",
       "packagesPath": "C:\\Users\\sendus-pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sendus-pc\\source\\repos\\UserManagement\\obj\\",
+      "outputPath": "C:\\Users\\sendus-pc\\source\\repos\\UserManagementAPI\\UserManegementAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

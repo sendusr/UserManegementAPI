@@ -43,7 +43,7 @@ namespace UserManagement.Controllers
 
             return "mccdaga123";
         }
-        [HttpPost("Register")]
+        [HttpPost("Register")] //BELUM ADA METHOD ROLLBACK DATABASE KETIKA ADA PENGISIAN TABLE YANG GAGAL!!!!!!!!! -Rangga
         public ActionResult Register(RegisterVM registerVM)
         {
             var checkNIKTerdaftar = myContext.Persons.Where(p => p.NIK == registerVM.NIK);
@@ -164,7 +164,7 @@ namespace UserManagement.Controllers
                 ).ToList();
             return Ok(model);
         }
-        [HttpGet("Profile2")]
+        [HttpGet("Profile2")]//metode join 1 1 (belajar)
         public ActionResult getAllReg2()
         {
             var model = myContext.Persons
@@ -190,34 +190,34 @@ namespace UserManagement.Controllers
                 ).ToList();
             return Ok(model);
         }
-        [HttpGet("Loging/{NIK}-{password}")]
-        public ActionResult LogIn(string NIK, string password)
-        {
-            var model =
-              (from c in myContext.Persons
-               join u in myContext.Accounts on c.NIK equals u.NIK
-               join d in myContext.Profilings on c.NIK equals d.NIK
-               join f in myContext.Educations on d.EducationID equals f.EducationID
-               where c.NIK == NIK && u.Password == password
-               select new RegisterVM
-               {
-                   NIK = c.NIK,
-                   FirstName = c.FirstName,
-                   LastName = c.LastName,
-                   Phone = c.Phone,
-                   BirthDate = c.BirthDate,
-                   Salary = c.Salary,
-                   Email = c.Email,
-                   Password = u.Password,
-                   GPA = f.GPA,
-                   Degree = f.Degree,
-                   EducationID = f.EducationID,
-                   UniversityID = f.UniversityID
+        //[HttpGet("Loging/{NIK}-{password}")] //SALAH PEMAHAMAN LOGIN!!!! Pertama mengartikan bahwa login pakai GET -Rangga
+        //public ActionResult LogIn(string NIK, string password)
+        //{
+        //    var model =
+        //      (from c in myContext.Persons
+        //       join u in myContext.Accounts on c.NIK equals u.NIK
+        //       join d in myContext.Profilings on c.NIK equals d.NIK
+        //       join f in myContext.Educations on d.EducationID equals f.EducationID
+        //       where c.NIK == NIK && u.Password == password
+        //       select new RegisterVM
+        //       {
+        //           NIK = c.NIK,
+        //           FirstName = c.FirstName,
+        //           LastName = c.LastName,
+        //           Phone = c.Phone,
+        //           BirthDate = c.BirthDate,
+        //           Salary = c.Salary,
+        //           Email = c.Email,
+        //           Password = u.Password,
+        //           GPA = f.GPA,
+        //           Degree = f.Degree,
+        //           EducationID = f.EducationID,
+        //           UniversityID = f.UniversityID
 
-               }
-                ).ToList();
-            return Ok(model);
-        }
+        //       }
+        //        ).ToList();
+        //    return Ok(model);
+        //}
         [HttpPost("Login/")]
         public ActionResult Index(LoginVM loginVM)
         {   
